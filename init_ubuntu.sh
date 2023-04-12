@@ -30,6 +30,8 @@ for X in $(cat requirements.txt); do
     py_deps_editor=$py_deps_editor' --collect-all '$X
 done
 
+py_deps_editor=$py_deps_editor' --collect-all tkinter'
+
 for X in $(find . -name '__pycache__'); do
     rm -rf "$X"
 done
