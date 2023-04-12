@@ -3,9 +3,9 @@
 made this cause kate at me f*s up bracket completion. did also for testing :)
 
 screenshots : <br>
-<img src="Screenshot_20230411_202322.png"><img src="Screenshot_20230411_202406.png">
+<img src="docs/Screenshot_20230411_202322.png"><img src="docs/Screenshot_20230411_202406.png">
 
-html preview supported tags : 
+html preview supported tags :
 ```
     <h1> , <h2> , <h3> , <h4> , <h5> , <h6> ,
     <a href=""> , <img src=""> ,

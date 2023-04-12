@@ -1,0 +1,25 @@
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
+
+# Builder
+index.html
+editor
+editor-x86_64.AppImage
+editor.AppDir/
+editor-glibc
+editor-glibc-x86_64.AppImage
+editor-musl
+editor-musl-x86_64.AppImage
+*.spec
+sha256sum.txt
+editor.exe

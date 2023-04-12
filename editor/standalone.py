@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 
+import os
+import sys
 from tkinter import *
 from tkhtmlview import HTMLLabel, RenderHTML
 from tkinter import filedialog
 import tkinter.font as tkFont
+
+os.chdir(getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.getcwd())
+PYBIN = sys.executable
 
 # opcje
 
@@ -31,7 +37,7 @@ htmltemplate = """
 <div style="color:cyan; background-color:black"> wciśnij klawisze (control) i (s) , żeby zapisać plik </div>
 <div style="color:green"> wciśnij klawisze (control) i (o) żeby otworzyć istniejący plik </div>
 <div style="color:yellow;background-color:black;"> klawisze ctrl+ , - , a , v, c, x, ... również działają </div>
-<code style="color:green;background-color:black"> >$ ciekawostka - część kodu źródłowego tego edytora tekstu została napisana... \ 
+<code style="color:green;background-color:black"> >$ ciekawostka - część kodu źródłowego tego edytora tekstu została napisana... \
 w tymże edytorze tekstu :) _ </code> <br> <p>kod źródłowy : <a href="https://codeberg.org/hacknorris/editor">link</a></p>
 <i>notka - możliwość uruchomienia aplikacji ze skrótu w bashu... po prostu ./edytor_html.py . kompatybilne z folderami typu /bin/ ... </i>
 <div>informacje o autorze: <img src="pinky-kde.gif"></img></div>
@@ -98,7 +104,7 @@ def Open_Window(*args):
     openedfile = filedialog.askopenfile()
     editor.delete("0.0",END)
     editor.insert("0.0", openedfile.read())
-	
+
 def Help_Window(*args):
     Helper_Thing = Toplevel()
     Helper_Thing.title("pomoc")
