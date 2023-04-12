@@ -32,7 +32,7 @@ htmltemplate = """
 <div style="color:green"> wciśnij klawisze (control) i (o) żeby otworzyć istniejący plik </div>
 <div style="color:yellow;background-color:black;"> klawisze ctrl+ , - , a , v, c, x, ... również działają </div>
 <code style="color:green;background-color:black"> >$ ciekawostka - część kodu źródłowego tego edytora tekstu została napisana... \ 
-w tymże edytorze tekstu :) _ </code> <br>
+w tymże edytorze tekstu :) _ </code> <br> <p>kod źródłowy : <a href="https://codeberg.org/hacknorris/editor">link</a></p>
 <i>notka - możliwość uruchomienia aplikacji ze skrótu w bashu... po prostu ./edytor_html.py . kompatybilne z folderami typu /bin/ ... </i>
 <div>informacje o autorze: <img src="pinky-kde.gif"></img></div>
 <ul>
