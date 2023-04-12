@@ -14,7 +14,7 @@ markdown README.md >> index.html
 echo '</body>' >> index.html
 echo '</html>' >> index.html
 
-apk add --no-cache py-pip linux-headers build-base python3-dev xvfb appstream tar libc6-compat curl upx > /dev/null
+apk add --no-cache py-pip linux-headers build-base python3-dev xvfb appstream tar libc6-compat curl upx python3-tkinter > /dev/null
 
 cp /ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 rm -f /etc/ssl/cert.pem
@@ -75,9 +75,6 @@ for X in ./editor/*; do
         py_dirs_editor=$py_dirs_editor" --add-data $BASENAME/*:$BASENAME/"
     fi
 done
-
-python3 setup.py build
-python3 setup.py install
 
 cd editor
 

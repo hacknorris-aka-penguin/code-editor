@@ -85,8 +85,6 @@ cd /source
 
 wine python -m pip install -r requirements.txt
 
-wine python setup.py build
-wine python setup.py install
 rm -rf editor.egg-info
 
 cd editor

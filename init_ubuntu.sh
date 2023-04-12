@@ -16,7 +16,7 @@ markdown README.md >> index.html
 echo '</body>' >> index.html
 echo '</html>' >> index.html
 
-apt install --yes python3-pip linux-headers-5.19.0-38-generic build-essential python3-dev xvfb appstream tar lsb-release apt-utils file upx > /dev/null
+apt install --yes python3-pip python3-tk linux-headers-5.19.0-38-generic build-essential python3-dev xvfb appstream tar lsb-release apt-utils file upx > /dev/null
 
 pip install --upgrade wheel setuptools > /dev/null
 pip install -r requirements.txt > /dev/null
@@ -51,9 +51,6 @@ for X in ./editor/*; do
         py_dirs_editor=$py_dirs_editor" --add-data $BASENAME/*:$BASENAME/"
     fi
 done
-
-python3 setup.py build
-python3 setup.py install
 
 cd editor
 
