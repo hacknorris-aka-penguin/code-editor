@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from tkinter import *
-from tkhtmlview import HTMLLabel, RenderHTML
 from tkinter import filedialog
 import tkinter.font as tkFont
 import os
@@ -89,6 +88,7 @@ def Save_Window(*args):
         file.write(editor.get("0.0",END))
 
 def Wiev_Window(*args):
+    from tkhtmlview import HTMLLabel, RenderHTML
     Second_Window = Toplevel()
     Second_Window.title("podgląd")
     entry1 = IntVar()
